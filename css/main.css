@@ -365,3 +365,11 @@ aside.w-contacts header {
 .w-recent-chats::-webkit-scrollbar-thumb {
   background-color: rgba(0,0,0,.2);
 }
+
+
+
+/* Mis clases*/
+
+.boton-enviar {
+	cursor:pointer;
+}
