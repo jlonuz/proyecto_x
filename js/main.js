@@ -35,6 +35,7 @@ function enviarMensaje(){
 var raymi = document.getElementById("raymi");	
 raymi.addEventListener('click', function(){
 
+
 //Aquí creo el header
 	var header = document.getElementById("header");
 	header.innerHTML = "";
@@ -58,19 +59,34 @@ raymi.addEventListener('click', function(){
 	profileName.appendChild(name);
 	divProfile.appendChild(parrUltima);
 	parrUltima.appendChild(ultimaVez);
-	
+
 //Aquí creo el chat
 	var section = document.getElementById("chat");
 	section.innerHTML = "";
 
-	var divChat = document.createElement("div")
-	divChat.classList.add("w-message", "w-message-in");
+	var divChat = document.createElement("div");
 	var divText = document.createElement("div");
-	divText.classList.add("w-message-text");
 	var nombre = document.createElement("h5");
-	var textoNombre = document.createTextNode()
+	var textoNombre = document.createTextNode("Raymi Saldomando");
+	var mensaje = document.createElement("p");
+	var textoMensaje = document.createTextNode("La clase va bien!");
+	var divhora = document.createElement("div");
+	var hora = document.createTextNode("11:12");
+
+	divChat.classList.add("w-message", "w-message-in");
+	divText.classList.add("w-message-text");
+	nombre.classList.add("blue-1");
+	divhora.classList.add("time");
 
 
+	section.appendChild(divChat);
+	divChat.appendChild(divText);
+	divText.appendChild(nombre);
+	nombre.appendChild(textoNombre);
+	divText.appendChild(mensaje);
+	mensaje.appendChild(textoMensaje);
+	divText.appendChild(divhora);
+	divhora.appendChild(hora);
 
 })
 
